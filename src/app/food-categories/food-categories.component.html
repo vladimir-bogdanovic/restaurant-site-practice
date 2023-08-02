@@ -1,0 +1,41 @@
+<div class="categories-container">
+  <h2 class="categories-title">Categories</h2>
+  <div class="form-container">
+    <form [formGroup]="searchForm">
+      <label>Search your food here: </label>
+      <input type="text" formControlName="search" />
+    </form>
+    <!-- ovde bi trebalo da bude dropdown dugme -->
+
+    <div class="sorting-button-div">
+      <button (click)="sortingByName()">
+        {{ sortFromAToZ ? "od a ka z" : "od z ka a" }}
+      </button>
+    </div>
+  </div>
+
+  <div class="categories-wraper">
+    <div class="row" *ngFor="let category of categories">
+      <div class="card-wraper">
+        <div class="card-container">
+          <img
+            src="{{ category.thumb }}"
+            alt="{{ category.name }}"
+            style="width: 100%"
+          />
+          <div>
+            <h2 class="card-title">{{ category.name }}</h2>
+            <p>
+              <button
+                (click)="onClickDetail(category.name)"
+                class="card-button"
+              >
+                Detail
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

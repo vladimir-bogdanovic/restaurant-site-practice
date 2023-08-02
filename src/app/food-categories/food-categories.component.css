@@ -1,0 +1,95 @@
+.categories-container {
+  margin: 10px 0px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.heading-categories {
+  text-align: center;
+  margin: 10px auto;
+  font-size: 3rem;
+}
+
+.categories-wraper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid black;
+}
+
+.card-wraper {
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card-container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 5px;
+  padding: 5px;
+  width: 250px;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.card-button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.card-button:hover {
+  background-color: #555;
+}
+
+img {
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .categories-container {
+    flex-direction: column;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form-container form {
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  padding: 2rem;
+  margin: 0px;
+}
+
+.form-container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 40px;
+  margin-right: 50px;
+}
+
+.sorting-button-div {
+  display: flex;
+  align-items: center;
+}

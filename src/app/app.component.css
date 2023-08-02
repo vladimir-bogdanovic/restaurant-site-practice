@@ -1,0 +1,57 @@
+.main-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  padding-bottom: 2.5rem;
+}
+
+.nav-container {
+  width: 100%;
+  z-index: 2;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(165, 165, 165);
+}
+
+.button-container {
+  float: right;
+  padding: 10px;
+}
+.login-button {
+  padding: 8px;
+}
+
+.logo-div {
+  padding: 0px;
+  margin-left: 20px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.pages {
+  margin-top: 15px;
+}

@@ -1,0 +1,67 @@
+<div class="contact-page">
+  <div class="contact-wraper">
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <div class="name-container">
+        <label for="">Name</label> <br />
+        <input
+          class="input"
+          type="text"
+          name="name"
+          id="name"
+          formControlName="name"
+        />
+        <span
+          class="invalid-input-warning"
+          *ngIf="
+            !contactForm.get('name').valid && contactForm.get('name').touched
+          "
+          >Please enter a valid name!</span
+        >
+      </div>
+      <br />
+
+      <div class="email-container">
+        <label for="email">E-mail</label> <br />
+        <input class="input" formControlName="email" />
+        <span
+          class="invalid-input-warning"
+          *ngIf="
+            !contactForm.get('email').valid && contactForm.get('email').touched
+          "
+          >Please enter a valid e-mail!</span
+        >
+      </div>
+      <br />
+      <div class="review-container">
+        <label for="review">Review</label> <br />
+        <textarea
+          name="review"
+          id="review"
+          cols="30"
+          rows="5"
+          formControlName="review"
+        ></textarea>
+        <span
+          class="invalid-input-warning"
+          *ngIf="
+            !contactForm.get('review').valid &&
+            contactForm.get('review').touched
+          "
+          >Please enter your review!</span
+        >
+      </div>
+      <br />
+      <hr />
+      <div class="button-container">
+        <button
+          [disabled]="!contactForm.valid"
+          class="button button-shade"
+          type="submit"
+        >
+          <span *ngIf="contactForm.valid">sumbit</span>
+          <span *ngIf="!contactForm.valid">enter input fields</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

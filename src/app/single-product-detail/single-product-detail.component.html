@@ -1,0 +1,12 @@
+<div class="food-details-container">
+  <div class="img-category">
+    <img src="{{ singleProduct.thumb }}" />
+  </div>
+
+  <div class="singleProduct">
+    <p>Product u picked: {{ singleProduct.name }}</p>
+    <button class="btn-to-categories" (click)="toCategoriesButton()">
+      To categories
+    </button>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  display: block;
+  background-color: #333;
+  text-align: center;
+  padding: 20px;
+  color: azure;
+}

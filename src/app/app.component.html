@@ -1,0 +1,26 @@
+<div class="main-container">
+  <div class="content-wrapper">
+    <div class="nav-container">
+      <ul>
+        <li class="logo-div">
+          <a routerLink="/">
+            <img class="logo" src="../assets/images/logo.jpg" alt="logo" />
+          </a>
+        </li>
+        <div class="pages">
+          <li><a routerLink="/">Home</a></li>
+          <li><a routerLink="/categories">Categories</a></li>
+          <li><a routerLink="/details">Details</a></li>
+          <li><a routerLink="/policy">policy</a></li>
+          <li><a routerLink="/about-us">about us</a></li>
+          <li><a routerLink="/contact-us">contact us</a></li>
+          <li class="button-container">
+            <button class="login-button">Login</button>
+          </li>
+        </div>
+      </ul>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+  <app-footer></app-footer>
+</div>

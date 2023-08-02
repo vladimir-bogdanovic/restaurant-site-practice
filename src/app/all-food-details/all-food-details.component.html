@@ -1,0 +1,13 @@
+<div class="component-wraper">
+<div class="food-details-container" *ngFor="let category of categories">
+  <div class="img-category">
+    <img src="{{ category.thumb }}" />
+  </div>
+
+  <h1 class="category-name">Category: {{ category.name }}</h1>
+
+  <div class="category-description">
+    <p>{{ category.description }}</p>
+  </div>
+</div>
+</div>
