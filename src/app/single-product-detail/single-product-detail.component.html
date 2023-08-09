@@ -1,12 +1,12 @@
-<div class="food-details-container">
-  <div class="img-category">
+<div class="single-product-details__wraper">
+  <div class="single-product-details__image">
     <img src="{{ singleProduct.thumb }}" />
   </div>
 
-  <div class="singleProduct">
-    <p>Product u picked: {{ singleProduct.name }}</p>
-    <button class="btn-to-categories" (click)="toCategoriesButton()">
-      To categories
-    </button>
+  <div class="single-product-details__info">
+    <h3 class="single-product-details__name">
+      Product u picked: {{ singleProduct.name }}
+    </h3>
+    <button (click)="toCategoriesButton()">To categories</button>
   </div>
 </div>
