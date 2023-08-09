@@ -1,3 +1,27 @@
-.singleProduct {
+.single-product-details__wraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.single-product-details__info {
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  padding: 10px;
+}
+
+.single-product-details__name {
+  padding-bottom: 20px;
+}
+
+.single-product-details__image {
+  display: flex;
+  flex-wrap: wrap;
 }
